@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.horario {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Agregamos desplazamiento horizontal para tablas grandes */
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Estilos para tamaños de pantalla más pequeños */
+@media screen and (max-width: 768px) {
+    table th, table td {
+        font-size: 12px;
+    }
+}
+
+/* Estilos para tamaños de pantalla aún más pequeños */
+@media screen and (max-width: 480px) {
+    table th, table td {
+        font-size: 10px;
+    }
+}
+
+/* Estilos para los botones */
+.botones {
+    margin-bottom: 20px;
+}
+
+.botones input[type="button"] {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#botonbuscar {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.botones input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo específico para el botón "Guardar Cambios" */
+#guardarCambios {
+    background-color: #28a745;
+}
+
+#guardarCambios:hover {
+    background-color: #218838;
+}
+
+/* Estilo específico para el botón "Volver atrás" */
+input[type="button"][onclick="history.back()"] {
+    background-color: #dc3545;
+}
+
+input[type="button"][onclick="history.back()"]:hover {
+    background-color: #c82333;
+}
